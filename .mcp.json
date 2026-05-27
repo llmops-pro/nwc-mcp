@@ -1,0 +1,28 @@
+{
+  "mcpServers": {
+    "nwc": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "/home/cassian/Documents/BLOCKCHAINs/NOSTR/nwc-mcp/dist/index.js"
+      ],
+      "env": {}
+    },
+    "paywall_test": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "/home/cassian/Documents/BLOCKCHAINs/NOSTR/paywall-mcp-test/dist/index.js"
+      ],
+      "env": {}
+    },
+    "marketplace": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "/home/cassian/Documents/BLOCKCHAINs/NOSTR/marketplace-mcp/dist/index.js"
+      ],
+      "env": {}
+    }
+  }
+}

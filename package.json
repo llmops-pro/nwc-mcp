@@ -1,0 +1,60 @@
+{
+  "name": "nwc-mcp",
+  "version": "0.2.1",
+  "description": "MCP server exposing a Lightning wallet to LLM agents over Nostr Wallet Connect (NIP-47). Twelve tools — read balance, send/receive, pay invoices/LN addresses/LNURLs, batch payments, keysend — wrapped in a defense-in-depth safety stack (budget caps, allowlist, two-step confirmation, audit log).",
+  "type": "module",
+  "license": "MIT",
+  "author": "LLMOps.Pro <https://njump.me/npub1hdg932jvwc3jdvkqywgqv0ue4nn60exrf92asy8mtazt3hjg7d2s2yw0nw>",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "lightning",
+    "lightning-network",
+    "bitcoin",
+    "nwc",
+    "nostr-wallet-connect",
+    "nip-47",
+    "nostr",
+    "claude",
+    "ai-agent",
+    "llm",
+    "alby"
+  ],
+  "bin": {
+    "nwc-mcp": "dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    ".env.example",
+    "examples"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --target node20 --clean --shims",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@getalby/lightning-tools": "^5.0.0",
+    "@getalby/sdk": "^4.0.0",
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "bech32": "^2.0.0",
+    "light-bolt11-decoder": "^3.0.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsup": "^8.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.5.0",
+    "vitest": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@9.15.0"
+}

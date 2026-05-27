@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "nwc": {
+      "command": "node",
+      "args": ["/absolute/path/to/nwc-mcp/dist/index.js"],
+      "env": {
+        "NWC_CONNECTION_STRING": "nostr+walletconnect://<paste-yours-here>",
+        "NWC_DAILY_BUDGET_SATS": "10000",
+        "NWC_MAX_INVOICE_SATS": "5000",
+        "NWC_LOG_PATH": "/absolute/path/to/nwc-mcp.log",
+        "NWC_BUDGET_STATE_PATH": "/absolute/path/to/nwc-mcp-state.json"
+      }
+    }
+  }
+}

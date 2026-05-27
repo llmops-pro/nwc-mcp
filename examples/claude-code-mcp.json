@@ -1,0 +1,13 @@
+{
+  "//": "Drop this at the root of any project as `.mcp.json`. Claude Code will auto-load the nwc server when a session starts in this tree. Replace `/absolute/path/to/nwc-mcp` with where you cloned/installed the server. Because the server loads its own .env, leave the `env` block empty and configure secrets in nwc-mcp/.env — that way they stay out of any committed config file.",
+  "mcpServers": {
+    "nwc": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "/absolute/path/to/nwc-mcp/dist/index.js"
+      ],
+      "env": {}
+    }
+  }
+}

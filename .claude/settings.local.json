@@ -1,0 +1,7 @@
+{
+  "enabledMcpjsonServers": [
+    "nwc",
+    "paywall_test",
+    "marketplace"
+  ]
+}
