@@ -176,5 +176,5 @@ Built by **LLMOps.Pro**.
 
 - **NOSTR:** [`npub1hdg932jvwc3jdvkqywgqv0ue4nn60exrf92asy8mtazt3hjg7d2s2yw0nw`](https://njump.me/npub1hdg932jvwc3jdvkqywgqv0ue4nn60exrf92asy8mtazt3hjg7d2s2yw0nw) — follow, DM, zap.
 - **Lightning Address:** `sovereigncitizens@getalby.com` — for support zaps and "this was useful" tips.
-- **Bug reports / feature requests:** open a GitHub issue (link forthcoming).
+- **Bug reports / feature requests:** open a GitHub issue (https://github.com/llmops-pro/nwc-mcp).
 - **Security issues:** please disclose privately via NOSTR DM before opening a public issue.
