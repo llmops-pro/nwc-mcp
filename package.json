@@ -1,6 +1,6 @@
 {
   "name": "nwc-mcp",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "MCP server exposing a Lightning wallet to LLM agents over Nostr Wallet Connect (NIP-47). Twelve tools — read balance, send/receive, pay invoices/LN addresses/LNURLs, batch payments, keysend — wrapped in a defense-in-depth safety stack (budget caps, allowlist, two-step confirmation, audit log).",
   "type": "module",
   "license": "MIT",
@@ -56,5 +56,13 @@
   "engines": {
     "node": ">=20"
   },
-  "packageManager": "pnpm@9.15.0"
+  "packageManager": "pnpm@9.15.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/llmops-pro/nwc-mcp.git"
+  },
+  "homepage": "https://github.com/llmops-pro/nwc-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/llmops-pro/nwc-mcp/issues"
+  }
 }
