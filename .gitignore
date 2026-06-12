@@ -6,3 +6,7 @@ dist/
 nwc-mcp.log
 nwc-mcp-state.json
 .DS_Store
+
+# stale in-place tsc output — never commit compiled JS into src/
+src/**/*.js
+src/**/*.d.ts
