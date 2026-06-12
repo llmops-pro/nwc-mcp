@@ -1,7 +1,7 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.llmops-pro/nwc-mcp",
-  "description": "Lightning wallet for LLM agents over Nostr Wallet Connect (NIP-47): balance, invoices, LN-address/LNURL payments, batch pay, keysend \u2014 wrapped in budget caps, allowlist, two-step confirmation, and an audit log.",
+  "description": "Lightning wallet for AI agents via Nostr Wallet Connect (NIP-47): budget caps, confirm, audit log.",
   "repository": {
     "url": "https://github.com/llmops-pro/nwc-mcp",
     "source": "github"
