@@ -10,3 +10,4 @@ nwc-mcp-state.json
 # stale in-place tsc output — never commit compiled JS into src/
 src/**/*.js
 src/**/*.d.ts
+tests/**/*.js

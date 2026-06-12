@@ -44,7 +44,7 @@ async function main(): Promise<void> {
   const nwc = new NwcClient(config.NWC_CONNECTION_STRING);
 
   const server = new McpServer(
-    { name: "nwc-mcp", version: "0.2.2" },
+    { name: "nwc-mcp", version: "0.2.3" },
     { capabilities: { tools: {} } },
   );
 

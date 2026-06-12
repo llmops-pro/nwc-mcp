@@ -1,0 +1,40 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.llmops-pro/nwc-mcp",
+  "description": "Lightning wallet for LLM agents over Nostr Wallet Connect (NIP-47): balance, invoices, LN-address/LNURL payments, batch pay, keysend \u2014 wrapped in budget caps, allowlist, two-step confirmation, and an audit log.",
+  "repository": {
+    "url": "https://github.com/llmops-pro/nwc-mcp",
+    "source": "github"
+  },
+  "version": "0.2.3",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "nwc-mcp",
+      "version": "0.2.3",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "NWC_CONNECTION_STRING",
+          "description": "Nostr Wallet Connect connection string (nostr+walletconnect://...)",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "NWC_DAILY_BUDGET_SATS",
+          "description": "Daily spend cap in sats",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "NWC_READ_ONLY",
+          "description": "Set true to block all spend tools",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ]
+    }
+  ]
+}
